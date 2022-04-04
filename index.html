@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">		
+		<meta name="viewport" content="width=device-width">
+		<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> -->
+		<title>3d</title>
+		<!-- <link rel="manifest" href="manifest.json"> 		
+		<link rel="icon" type="image/svg+xml" href="/orfo/favicon.svg">		 -->
+		<link rel="stylesheet" href="/babylon/styles.css">
+		<script src="/babylon/scripts/cannon.js"></script>
+		<script src="/babylon/scripts/babylon.js"></script>
+		<script src="/babylon/scripts/babylonjs.materials.min.js"></script>
+		<script src="/babylon/scripts/babylonjs.proceduralTextures.min.js"></script>
+		<script src="/babylon/scripts/babylonjs.loaders.min.js"></script>
+		<script src="/babylon/scripts/meshwriter.min.js"></script>		
+		<script type="module" src="/babylon/b_client.js"></script> 
+		<meta name="description" content="3d">
+	</head>
+	<body>	
+		<canvas id="renderCanvas" touch-action="none"></canvas>		
+		<div id="TopElements">
+			<div><span>Best Time:&nbsp;</span><span id="BestTime">00:00</span></div>
+			<div><span>Time:&nbsp;</span><span id="stopwatch">00:00</span></div>
+			<div><span>FPS:&nbsp;</span><span id="FPScount"></span>	</div>				
+		</div>
+		<div id="RightElements">
+			<div id="SS" class="v">
+				<label for="changeSpeedSphera">Speed</label>	
+				<select id="changeSpeedSphera">            
+					<option value="2">2</option>
+					<option value="4">4</option>
+					<option value="6">6</option> 
+					<option value="8">8</option>
+					<option value="10" selected>10</option>
+					<option value="12">12</option> 
+					<option value="14">14</option>
+					<option value="16">16</option>
+					<option value="18">18</option> 					
+				</select>
+			</div>
+			<div class="v">
+				<label for="changeLevel">Level</label>	
+				<select id="changeLevel"> 
+				</select>
+			</div>
+		</div>
+		<div id="bottomButtons">
+			<button id="buttonLeft" class="">↻</button>
+			<button id="buttonUnblock" class="">🔓</button>
+			<button id="buttonPauseGo" class="">▶️</button>
+			<button id="buttonCenter" class="">⥀</button>	
+			<button id="buttonRight" class="">↺</button>
+		</div>
+		
+		
+	</body>
+</html>
+
+
+

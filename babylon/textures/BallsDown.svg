@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100mm" height="100mm" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect width="100" height="100" fill="rgba(255,255,255,1)" />
+ <path transform="matrix(-.74635 .17322 .60054 .21527 17.433 19.811)" d="m148.77 238.95-77.914-30.058 64.988-52.446z" stroke-width="5.6693"/>
+ <rect x="45" y="9.9274" width="10" height="67.227" stroke-width="1.3886"/>
+</svg>

@@ -1,0 +1,57 @@
+html, body {overflow: hidden; width: 100%; height: 100%;margin: 0;padding: 0;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;}
+html {-webkit-tap-highlight-color: rgba(0,0,0,0) !important; -webkit-tap-highlight-color: transparent !important; }
+
+#renderCanvas {width: 100%;height: 100%;touch-action: none;}
+
+button{font-size:1.5rem;background: none;border: none;cursor: pointer;outline: none;color: white;}
+button:active {background:red}
+
+#bottomButtons{display: flex;position: fixed;bottom:0;left:0;width: 100%;justify-content: space-between;}
+#TopElements{display: flex;position: fixed;top:0;width: 80%;justify-content: space-between;}
+#TopElements>button{font-size: 1rem}
+#RightElements{display: flex;position: fixed;top:0;right:0;flex-direction: column;justify-content: space-between;}
+#CenterElements{position: fixed;top: 40%;display: flex;justify-content: space-evenly;width: 100%;}
+#CenterElements>button{color:#55e912;font-size: 3.5rem;}
+#ChangeBrickButt{display: flex;position: fixed;bottom:6%;left:0;width: 100%;justify-content: space-evenly;}
+#ChangeBrickButt>div{display: flex;flex-direction: column-reverse;align-items: center;}
+.B{color:#55e912;}
+#DelBrick{justify-content: center;}
+#DelBrickB{color:red}
+#ChangeBrickButt>div>button{font-size: 2.5rem;}
+.v{display: flex;flex-direction: column;}
+/* #changeSpeed{position: fixed;top:0;right:0;} */
+label, span{font-family: sans-serif;color: white;}
+#changeSpeedSphera,#changeLevel{width: 3rem;height: 2rem;}
+
+#pageBT{width: 100%;height: 100%;position: fixed;top: 0;background-color: #dbe1e8;z-index: 10;overflow: auto;display: none;flex-direction: column;}
+#closeParent{position: fixed;top:2%;right:2%}
+
+#ParentDelLevel{width: 100%;height: 100%;position: fixed;top: 0;background-color:black;z-index: 10;opacity:70%}
+#ChildDelLevel	{position: absolute;width:80%;height:20%;background-color: white;z-index: 11;top:20%;transform: translate(10%);
+	display: flex;flex-direction: column;justify-content: space-around;align-items: center;}
+
+#BonusesParent{display: flex;flex-wrap: wrap;justify-content: center;}
+.BonusesChild{display:flex;background-size:cover;width:5rem;height:5rem;margin:1rem;}
+
+#bbb{position: fixed;max-width: 80%;left: 50%; bottom:0; transform: translate(-50%);z-index:5;
+	opacity:0;transition: 1s; animation: show 3s 1;animation-fill-mode: forwards; animation-delay: 4s;}
+@keyframes show{
+	0%{	opacity:0}
+	100% {opacity:1}
+}
+
+#restartButton,#NextLevelButton {cursor: pointer;position: relative;padding: 2.5rem 7.5rem;border-radius: 3.75rem;line-height: 2.5rem;
+								font-size: 2rem;font-weight: 600;border: 1px solid #012880;}
+#restartButton{background-image: linear-gradient(-180deg, #FF89D6 0%, #F21010 100%);
+				box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50), 0 -0.25rem 1.5rem rgb(155, 15, 15) inset, 0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset, 0 0.25rem 0.5rem 0 rgb(132, 18, 18) inset}
+
+#NextLevelButton{background-image: linear-gradient(-180deg, #54EE0E 0%, #54EA10 100%);
+				box-shadow: 0 1rem 1.25rem 0 rgba(95, 210, 31, 0.5), 0 -0.25rem 1.5rem rgb(69, 81, 55) inset, 0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset, 0 0.25rem 0.5rem 0 rgb(74, 166, 23) inset}
+
+#restartButton>span,#NextLevelButton>span{color: transparent;background-image: linear-gradient(0deg, #E8DAE5 0%, #FEFAFD 100%);
+									-webkit-background-clip: text;background-clip: text;filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1))}

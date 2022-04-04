@@ -1,0 +1,8 @@
+<svg width="100mm" height="100mm" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <rect width="100" height="100" fill="rgba(255,255,255,1)" />
+ <g fill="#000080">
+  <path d="m82.942 13.118-65.886-0.019692 32.897 21.088z" stroke-width=".62913"/>
+  <path d="m82.942 86.882-65.886 0.019692 32.897-21.088z" stroke-width=".62913"/>
+  <rect transform="rotate(90)" x="40.489" y="-59.493" width="19.023" height="18.987" stroke-width="1.5778"/>
+ </g>
+</svg>
